@@ -7,12 +7,11 @@ int main()
     int counter = 1;
     for (int i = 1; i < s.size(); i++)
     {
-        if (!(s[i]>='A' && s[i]<='z') && s[i+1]>='A' && s[i+1]<='z')
+        if (!(isalpha(s[i])) && isalpha(s[i+1]))
         {
             counter++;
         }
     }
-    
     cout<<counter; 
     return 0;
 }
